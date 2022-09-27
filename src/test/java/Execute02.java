@@ -10,7 +10,7 @@ public class Execute02 {
 
         Statement st = con.createStatement();
 
-        //1.Example: Select the country names whose region id's are 1
+        //1.Example: Select the country names whose region ids are 1
         String sql1 = "SELECT country_name FROM countries WHERE region_id = 1";
         //If you use execute() method, you will get just true or false but I want to see the records.
         boolean r1 = st.execute(sql1);
@@ -23,7 +23,7 @@ public class Execute02 {
             System.out.println(result1.getString("country_name"));
         }
 
-        //2.Example: Select the country ids and country names whose region id's are greater than 2
+        //2.Example: Select the country ids and country names whose region ids are greater than 2
         String sql2 = "SELECT country_id, country_name FROM countries WHERE region_id>2";
         ResultSet result2 = st.executeQuery(sql2);
 
