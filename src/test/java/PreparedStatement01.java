@@ -1,0 +1,2 @@
+public class PreparedStatement01 {
+}
